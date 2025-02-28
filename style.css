@@ -1,0 +1,108 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    height: 100px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+main{
+    flex-grow: 1;
+    background-color: rgb(172, 19, 19);
+}
+
+.galeria{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(207, 204, 40);
+    display: flex;
+
+}
+
+.foto{
+    border: 1.5px solid rgb(109, 109, 109);
+}
+
+.galeria > .foto {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(110, 63, 139);
+}
+
+.container-direita{
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(26, 185, 71);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-superior{
+    flex-grow: 1;
+    background-color: rgb(101, 209, 101);
+    display: flex;
+}
+
+.container-superior-esquerda{
+    flex-grow: 1;
+    background-color: rgb(185, 118, 19);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-superior-esquerda .foto{
+    width: 50%;
+    height: 50%;
+    background-color: aquamarine;
+    
+}
+
+.container-superior-esquerda .foto:nth-of-type(1){
+    width: 100%;
+}
+.container-superior > .foto{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(32, 63, 107);
+}
+.container-inferior{
+    flex-grow: 1;
+    background-color: rgb(86, 33, 69);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.container-inferior .foto{
+    width: 37.5%;
+    height: 50%;
+    background-color: rgb(172, 101, 101);
+    
+}
+
+.container-inferior .foto:nth-of-type(3){
+    height: 100%;
+    width: 63.5%;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(44, 126, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+}
